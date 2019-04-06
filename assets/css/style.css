@@ -1,0 +1,55 @@
+form {
+    text-align: left;
+    border: 2px solid rgb(70, 58, 233);
+}
+
+header {
+    width: 80%;
+    font-size: 36px;
+    background-color: rgb(70, 58, 233);
+    padding: 20px 0;
+    color: white;
+    margin-bottom: 20px;
+}
+
+h4 {
+    text-align: left;
+    background-color: rgb(70, 58, 233);
+    color: white;
+    padding: 10px;
+}
+
+label {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border: 2px solid rgb(70, 58, 233);
+    margin-bottom: 20px;
+}
+
+th {
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    width: 80%;
+}
+
+.submit {
+    margin: 10px;
+}
+
+#name-entry, #dest-entry, #first-entry, #freq-entry {
+    width: 98%;
+    margin: 10px;
+}
