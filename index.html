@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Train Schedule</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Lalezar" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body background="assets/images/ep_naturalwhite/ep_naturalwhite/ep_naturalwhite.png">
     <div class="container">
         <header>
-            <h1>Train Time</h1>
+            <h1>Train Schedule</h1>
         </header>
         <div class="row">
             <h4>Current Train Schedule</h4>
-            <table>
+            <table id="trains">
                 <tr>
                     <th>Train Name</th>
                     <th>Destination</th>
@@ -25,23 +26,31 @@
                 </tr>
             </table>
         </div>
-        <div class="row">
+        <div class="row" id="train-add">
             <h4>Add Train</h4>
             <form>
                 <label for="">Train Name</label>
                 <input type="text" id="name-entry">
                 <label for="">Destination</label>
                 <input type="text" id="dest-entry">
-                <label for="">First Train Time</label>
+                <label for="">First Train Time (HH:MM am/pm)</label>
                 <input type="text" id="first-entry">
                 <label for="">Frequency (min)</label>
                 <input type="text" id="freq-entry">
-                <input type="submit" class="submit" value="Submit">
+                <input type="submit" class="submit" value="Submit" id="submit">
             </form>
         </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Please enter valid train information.</p>
+            </div>
+          
+          </div>
     </div>
 
-    <script src="assets/javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
