@@ -47,8 +47,6 @@ database.ref().on("child_added", function (snapshot) {
 
   var timeDifference = moment().diff(moment(trainTime, "hh:mm a"), "minutes");
 
-  console.log("Difference in time: " + timeDifference);
-
   // shows how much time is left until next train arrival
   var timeRemaining = timeDifference % frequency;
   console.log(frequency);
