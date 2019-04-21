@@ -134,7 +134,7 @@ p {
 }
 @media screen and (max-width: 640px) {
     #name-entry, #dest-entry, #first-entry, #freq-entry {
-        width: 94%;
+        width: 92%;
     }
 }
 
