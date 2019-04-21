@@ -121,3 +121,25 @@ p {
 #trains {
     background-color: white;
 }
+
+@media screen and (max-width: 980px) {
+    #name-entry, #dest-entry, #first-entry, #freq-entry {
+        width: 96%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #name-entry, #dest-entry, #first-entry, #freq-entry {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 640px) {
+    #name-entry, #dest-entry, #first-entry, #freq-entry {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    table {
+        font-size: 10px;
+    }
+}
